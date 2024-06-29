@@ -821,11 +821,11 @@ network-related issues between the containers.
 2. Show the instruction needed to make this work. ***(1 mark)*** .
 ```bash
 1. Update the index.js file with
-```bash
+
 app.get('/', (req, res) => {
   res.send('Welcome to our Node.js and MySQL!');
 });
-```
+
 2. run the application again --> docker build -t nodejs-app .
 3. run the new updated Node.js container -> docker run --name new-nodejs-container --network nodejsnet -p 3000:3000 -d nodejs-app
 4. test again.
