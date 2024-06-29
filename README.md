@@ -1,10 +1,11 @@
 # OSProject Running Containers for Application Development
 
-Group Name:Group 4. 
+Group Name: Group 4
 
-Section:01. 
+Section: 01 
 
 Team Mates:
+
 1.Nur Qistina Aliesa Binti Yulfa Andri (2215272)
 
 2.Nurain Izzati Binti Abd Rauf (2217978)
@@ -26,8 +27,13 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __Fill answer here__.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)***
+
+   https://github.com/qistinaliesa/OSProject/edit/main/README.md
+   
+2. How many files and folders are in this repository. ***(1 mark)***.
+
+   2 files , 1 folder
 
 
 ## Exploring github codespaces
@@ -59,10 +65,31 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces.***(1 mark)***
+```bash 
+The default operating system used to run the virtual environment for GitHub Codespaces is Ubuntu.
+```
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***.
+```bash   
+***4-core Configuration:***
 
+RAM: 8 GB
+Disk: 32 GB
+vCPU: 4 cores
+
+***8-core Configuration:***
+
+RAM: 16 GB
+Disk: 64 GB
+vCPU: 8 core
+```
+3. Why must we commit and sync our current work on source control? ***(1 mark)***.
+```bash
+Version Control: Maintain change history.
+Collaboration: Prevent conflicts among team members.
+Backup: Protect against data loss.
+Traceability: Track changes and accountability.
+```
 ## Exploring the Terminal
 
 1. Look at the TERMINAL tab. Explore and run commands according to the questions below. 
@@ -78,23 +105,347 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)***
+```bash
+   @qistinaliesa ➜ /workspaces/OSProject (main) $ pwd
+   /workspaces/OSProject
+```
+
+
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+codespace:x:1000:1000::/home/codespace:/bin/bash
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
+3. Run the command **df** . ***(1 mark)***.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10381244  20772336  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        0     65536   0% /dev/shm
+/dev/root       30298176 24225392   6056400  80% /vscode
+/dev/sdb1       46127956       88  43752292   1% /tmp
+/dev/loop3      32847680 10381244  20772336  34% /workspaces
+```
+
+4. Run the command **du** . ***(1 mark)***.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ du
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+8       ./.git/objects/f2
+8       ./.git/objects/eb
+8       ./.git/objects/83
+8       ./.git/objects/0d
+12      ./.git/objects/b5
+16      ./.git/objects/72
+8       ./.git/objects/47
+8       ./.git/objects/7b
+8       ./.git/objects/74
+12      ./.git/objects/29
+8       ./.git/objects/20
+8       ./.git/objects/f6
+8       ./.git/objects/81
+8       ./.git/objects/fc
+8       ./.git/objects/4b
+12      ./.git/objects/14
+8       ./.git/objects/a6
+8       ./.git/objects/2b
+8       ./.git/objects/52
+8       ./.git/objects/93
+12      ./.git/objects/ff
+8       ./.git/objects/41
+12      ./.git/objects/2e
+8       ./.git/objects/3f
+12      ./.git/objects/e5
+12      ./.git/objects/62
+8       ./.git/objects/03
+8       ./.git/objects/b2
+8       ./.git/objects/b6
+8       ./.git/objects/cb
+8       ./.git/objects/71
+8       ./.git/objects/86
+12      ./.git/objects/4c
+8       ./.git/objects/d8
+12      ./.git/objects/73
+8       ./.git/objects/c3
+8       ./.git/objects/91
+8       ./.git/objects/4f
+12      ./.git/objects/17
+8       ./.git/objects/a4
+8       ./.git/objects/58
+8       ./.git/objects/e7
+8       ./.git/objects/fd
+1828    ./.git/objects/pack
+8       ./.git/objects/4a
+8       ./.git/objects/b9
+8       ./.git/objects/fa
+8       ./.git/objects/dc
+12      ./.git/objects/af
+8       ./.git/objects/fe
+12      ./.git/objects/25
+16      ./.git/objects/fb
+8       ./.git/objects/f7
+8       ./.git/objects/3a
+12      ./.git/objects/70
+12      ./.git/objects/3d
+12      ./.git/objects/bf
+8       ./.git/objects/49
+8       ./.git/objects/96
+8       ./.git/objects/60
+12      ./.git/objects/1c
+8       ./.git/objects/0b
+8       ./.git/objects/04
+8       ./.git/objects/cd
+8       ./.git/objects/c6
+8       ./.git/objects/24
+8       ./.git/objects/ab
+12      ./.git/objects/6e
+12      ./.git/objects/44
+12      ./.git/objects/64
+8       ./.git/objects/c0
+12      ./.git/objects/d2
+8       ./.git/objects/8e
+8       ./.git/objects/a3
+4       ./.git/objects/info
+8       ./.git/objects/1b
+8       ./.git/objects/e9
+2532    ./.git/objects
+8       ./.git/refs/remotes/origin
+12      ./.git/refs/remotes
+8       ./.git/refs/heads
+4       ./.git/refs/tags
+28      ./.git/refs
+8       ./.git/logs/refs/remotes/origin
+12      ./.git/logs/refs/remotes
+8       ./.git/logs/refs/heads
+24      ./.git/logs/refs
+32      ./.git/logs
+68      ./.git/hooks
+4       ./.git/branches
+8       ./.git/info
+2712    ./.git
+1972    ./images
+4708    .
+``` 
+5. Run the command **ls** . ***(1 mark)*** .
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ ls
+README.md  images
+```
+6. Run the command **ls -asl** . ***(1 mark)***.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ ls -asl
+total 36
+ 4 drwxrwxrwx+ 4 codespace root  4096 Jun 20 01:45 .
+ 4 drwxr-xrwx+ 5 codespace root  4096 Jun 20 01:46 ..
+ 4 drwxrwxrwx+ 9 codespace root  4096 Jun 20 04:04 .git
+20 -rw-rw-rw-  1 codespace root 17447 Jun 20 04:03 README.md
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun 20 01:45 images
+```
+7. Run the command **free -h** . ***(1 mark)***.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       1.3Gi       215Mi        63Mi       6.3Gi       6.1Gi
+Swap:            0B          0B          0B
+```
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
+processor       : 0
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3224.165
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.84
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3232.709
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 1
+initial apicid  : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.84
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+                                                                           
+```
+9. Run the command **top** and type **q** to quit. ***(1 mark)***.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
+processor       : 0
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3224.165
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.84
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+top - 04:29:19 up 29 min,  0 users,  load average: 0.44, 0.39, 0.34
+Tasks:  29 total,   1 running,  28 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.7 us,  5.2 sy,  0.0 ni, 90.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7929.6 total,    284.5 free,   1824.7 used,   5820.3 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5724.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                        
+  12369 codespa+  20   0   21.5g 321576  48000 S   1.3   4.0   0:08.80 node                                                                           
+    556 codespa+  20   0   21.5g 333396  47872 S   1.0   4.1   0:27.35 node                                                                           
+   1180 codespa+  20   0 1175356  62528  42112 S   0.7   0.8   0:01.87 node                                                                           
+    535 codespa+  20   0 1350340  99632  45184 S   0.3   1.2   0:08.38 node                                                                           
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.05 docker-init                                                                    
+      7 codespa+  20   0    7236   1664   1664 S   0.0   0.0   0:00.00 sleep                                                                          
+     22 root      20   0   12196   3608   2688 S   0.0   0.0   0:00.00 sshd                                                                           
+    339 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                             
+    365 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                                             
+    526 codespa+  20   0    2624   1792   1792 S   0.0   0.0   0:00.01 sh                                                                             
+    594 codespa+  20   0 1240564  54704  41216 S   0.0   0.7   0:00.28 node                                                                           
+   1006 codespa+  20   0 1010384  72656  40704 S   0.0   0.9   0:00.92 node                                                                           
+   1629 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                             
+   1663 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                                             
+   2043 root      20   0 1983176  86148  52736 S   0.0   1.1   0:00.29 dockerd                                                                        
+   2051 root      20   0 1798832  46064  30336 S   0.0   0.6   0:00.39 containerd                                                                     
+   3225 codespa+  20   0   12748   5120   4864 S   0.0   0.1   0:00.00 git                                                                            
+   3226 codespa+  20   0    2620   1408   1408 S   0.0   0.0   0:00.00 sh                                                                             
+   3227 codespa+  20   0    2620   1536   1536 S   0.0   0.0   0:00.00 git-editor.sh                                                                  
+   3228 codespa+  20   0  858296  44108  35328 S   0.0   0.5   0:00.03 node                                                                           
+  12091 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh 
+```
+10. Run the command **uname -a**.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ uname -a
+Linux codespaces-0fd7ad 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
+11. What is the available free memory in the system.
+```bash
+MiB Mem :   7929.6 total,    284.5 free,   1824.7 used,   5820.3 buff/cache
+The available free memory is 284.5 Mi
+```
+12. What is the available disk space mounted on /workspace.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject (main) $ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10381244  20772336  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        0     65536   0% /dev/shm
+/dev/root       30298176 24225392   6056400  80% /vscode
+/dev/sdb1       46127956       88  43752292   1% /tmp
+/dev/loop3      32847680 10381244  20772336  34% /workspaces
+```
+13. Name the version and hardware architecture of the linux Virtual environment.
+```bash
+Linux codespaces-0fd7ad 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
+14. What is the difference between **ls** vs **ls -asl**.
+```bash
+ls: Lists files and directories in the current directory.
+ls -asl: Lists files and directories in the current directory with detailed information including file size, permissions, number of links, owner, group, and timestamp. The -a flag includes hidden files, -s shows file sizes, and -l provides a long listing format.
+```
+15. What is the TLB size of the Virtual CPU.
+```bash
+TLB size: 2560 4K pages
+```
+16. What is the CPU speed of the Virtual CPU.
+```bash
+cpu MHz: 3224.165
+```
+17. What is the top running process that consumes the most CPU cycles.
+```bash
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                        
+  12369 codespa+  20   0   21.5g 321576  48000 S   1.3   4.0   0:08.80 node                                                                           
+    556 codespa+  20   0   21.5g 333396  47872 S   1.0   4.1   0:27.35 node
+
+```
 
 ## Running your own container instance.
 
@@ -154,9 +505,18 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
-
+1. Are files in the container persistent. Why not?. ***(1 mark)*** ].
+```bash
+Files in a Docker container are not persistent by default. When the container is stopped or removed, all data written to the container's filesystem is lost. To persist data, use Docker volumes or bind mounts.
+```
+2. Can we run two, or three instances of debian linux? . ***(1 mark)***.
+```bash
+You can run multiple instances of Debian Linux (or any other OS) using Docker.
+Each instance is isolated and independent, allowing you to run as many as your system resources permit.
+For example, in this, we run two linux instance:
+1.docker pull debian
+2.docker run --detach -it debian
+```
 ## Running your own container with persistent storage
 
 1. In the previous experiment, you might have notice that containers are not persistent. To make storage persistent, you will need to mount them. 
@@ -174,14 +534,19 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
+```bash
+Files created in myroot is owned by the user root and group root.
+```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+```bash
+Yes, the permission of the files to used codespace can be change.
+```
 
 ## You are on your own, create your own static webpage
 
@@ -207,9 +572,19 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
+```bash
+The permissions of folder /usr/local/apache/htdocs are "drwxrwxrwx+" 
+The user and group that owns the folder are '1000' for both.
+```
+2. What port is the apache web server running. ***(1 mark)*** 
+```bash 
+The Apache web server is typically running on port 80.
+```
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+```bash
+Port 80 is typically open for HTTP protocol on the host machine.
+```
 
 ## Create SUB Networks
 
@@ -228,12 +603,40 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+```bash
+BusyBox is a software suite that provides several Unix utilities in a single executable file. It is often referred to
+as "The Swiss Army Knife of Embedded Linux" because it combines tiny versions of many common UNIX utilities into a single
+small executable, making it ideal for use in constrained environments, such as embedded systems. In the context of Docker,
+BusyBox is a popular base image for containers due to its small size and efficiency.The --name command switch in Docker is used
+to assign a specific name to a container. By default, Docker assigns a random, unique name to each container. However,
+using --name, you can specify a human-readable name for the container, which can make managing and referencing containers easier.
+```
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+```bash
+@nisanzryy ➜ /workspaces/OSProject (main) $ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+e7d8fdbd6d57   bluenet   bridge    local
+1bb39600d2a5   bridge    bridge    local
+85833c7baca9   host      host      local
+04c23f679397   none      null      local
+67cf0bec0f03   rednet    bridge    local
+```
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+```bash
+bluenet gateway: 172.18.0.1
+rednet gateway: 172.19.0.1
+```
+6. What is the network address for the running container c1 and c2? ***(1 mark)***
+```bash
+c1 IP address: 172.18.0.2
+c2 IP address: 172.19.0.2
+```
+7. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+```bash
+c1 cannot ping c2 because they are on different isolated networks.
+output : ping: bad address 'c2'
+```
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
 ```
@@ -244,8 +647,24 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)***
+```bash
+Yes, after creating the bridgenet network and connecting both containers (c1 and c2) to this network, the ping from c1 to c2 is successful. The output is as follows:
+@nisanzryy ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.089 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.091 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.093 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.060 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.051 ms
+```
+2. What is different from the previous ping in the section above? ***(1 mark)***
+```bash
+In the previous attempt, the ping command resulted in an error with the message "bad address 'c2' ", indicating that c1 was unable to resolve with c2. This failure occurred because c1 and c2 were on separate, isolated networks (bluenet and rednet), which do not allow inter-network communication by default.
+After connecting both c1 and c2 to the bridgenet network, they now share a common network. This network bridge allows the containers to resolve each other's names and communicate successfully
+```
 
 ## Intermediate Level (10 marks bonus)
 
@@ -388,8 +807,22 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)***.
+```bash
+@qistinaliesa ➜ /workspaces/OSProject/nodejs-app (main) $ curl http://localhost:3000/random
+Server Error
+
+indicates that the Node.js application is unable to connect to the MySQL database or encounters an error when executing the
+query.This typically occurs due to misconfiguration of the MySQL connection settings in the Node.js application or
+network-related issues between the containers.
+
+
+```
+2. Show the instruction needed to make this work. ***(1 mark)*** .
+```bash
+
+
+```   
 
 
 
@@ -399,3 +832,4 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 2. Check your repository link, to see if all the files and answers are included in the repository. 
 3. Submit through italeem, by providing the link to your repository.
 4. Due by ***AS STATED IN ITALEEM SYSTEM***
+
